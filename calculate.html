@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-7xl mt-16">Welcome to <span class="text-blue-700 font-bold">baper bank</span> </h1>
+
+
+    </header>
+
+    <main>
+        <section class="my-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-700 p-8 rounded-xl">
+                    <h4 class="text-2xl">Deposite</h4>
+                    <h2  class="text-5xl">$ <span id="deposite-value" >00</span></h2>
+                </div>
+               
+            
+            
+                <div class="bg-yellow-700 p-8 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$ <span id="withdraw-value">00</span> </h2>
+                </div>
+               
+            
+           
+                <div class="bg-purple-700 p-8 rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2  class="text-5xl">$ <span id="total-value">1240</span> </h2>
+                </div>
+            </div>
+               
+            
+        </section>
+
+        <section class="my-12">
+            <div class="grid grid-cols-2 w-9/12 gap-4 mx-auto">
+                <div class="bg-orange-700 p-8 rounded-xl">
+                    <h1 class="text-2xl  font-semibold text-white"> Please Deposite now</h1>
+                    <input class="p-3 my-3 block w-9/12 rounded-md" type="text" name="" id="deposite" placeholder="Enter your amount">
+                    <button id="btn-deposite" class="bg-amber-500 text-white font-medium px-8 py-2 rounded-xl">Deposite</button>
+
+                </div>
+                <div class="bg-slate-500 p-8 rounded-xl">
+                    <h1 class="text-2xl font-semibold text-white"> Please Withdraw now</h1>
+                    <input class="p-3 my-3 block w-9/12 rounded-md" type="text" name="" id="withdraw" placeholder="Enter your amount">
+                    <button id="btn-withdraw" class="bg-amber-500 text-white font-medium px-8 py-2 rounded-xl">Withdraw</button>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+<script src="calculate.js"></script>
+</html>
