@@ -41,24 +41,48 @@ document.getElementById('btn-deposite').addEventListener('click' , function(){
 
 
 document.getElementById('btn-withdraw').addEventListener('click', function(){
-    //get value from withdraw text
+
   const withdarw = document.getElementById('withdraw');
   const getnewwithdarw = withdarw.value
+  const totalwithdraw =  parseInt(getnewwithdarw)
 
-  //get value from withdraw text
   const withdarwvalue = document.getElementById('withdraw-value');
   const getPreviouswithdrawvalue = withdarwvalue.innerText;
+
+  
+    //get value from withdraw text
+ 
+  
+
+  const newtotalwithdarw = totalwithdraw + parseInt(getPreviouswithdrawvalue) 
+
+  const total = document.getElementById('total-value')
+  const previousbalancetotal = total.innerText;
+  // console.log(totalwithdraw);
+
+  //get value from withdraw text
+ 
+  // console.log(getPreviouswithdrawvalue)
   //calculate the total deposite sum
- const totalwithdraw =  parseInt(getnewwithdarw)
-    withdarwvalue.innerText = totalwithdraw;
+  
+    withdarwvalue.innerText = newtotalwithdarw;
 
 
-    const total = document.getElementById('total-value')
-    const previousbalancetotal = total.innerText;
+
+  
+
+    
 
     //add to total 
 
-    const balancetotal = parseInt(previousbalancetotal) - totalwithdraw
+    
+    console.log(newtotalwithdarw)
+
+    const balancetotal = previousbalancetotal - newtotalwithdarw
+
+    // console.log(newtotalwithdarw)
+
+   
 
 
 
